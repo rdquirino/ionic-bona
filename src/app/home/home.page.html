@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Piadas sem Graça
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    
+    <!--<ion-img [src]="src"></ion-img>-->
+
+
+    <ion-input [ngModel]="pergunta" placeholder="Pesquisar"></ion-input>
+    <ion-button [disabled]="disabled ? '' : null" (click)="showPiadas()" expand="block">Buscar </ion-button>
+
+    <h1>{{piada?.pergunta}}</h1>
+    <h3 style=color:red>{{piada?.resposta}}</h3>
+
+  </div>
+
+
+</ion-content>
